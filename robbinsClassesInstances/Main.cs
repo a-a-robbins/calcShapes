@@ -4,8 +4,11 @@ using System.Text;
 
 namespace robbinsClassesInstances
 {
-    class Square
+    class MainClass
     {
+        public void Main(String[] args)
+        {
 
+        }
     }
 }
