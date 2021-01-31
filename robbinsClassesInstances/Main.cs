@@ -10,6 +10,7 @@ namespace robbinsClassesInstances
         {
             var square1 = new Square(10);
             var rectangle1 = new Rectangle(5, 4);
+            var circle1 = new Circle(3); 
 
             Console.WriteLine(); 
 
@@ -17,6 +18,8 @@ namespace robbinsClassesInstances
             Console.WriteLine("The perimeter of square1 is: " + square1.calcPerim(10));
             Console.WriteLine("The area of rectangle1 is: " + rectangle1.calcArea(5, 4));
             Console.WriteLine("The perimeter of rectangle1 is: " + rectangle1.calcPerim(5, 4));
+            Console.WriteLine("The area of circle one is: " + circle1.calcArea(3));
+            Console.WriteLine("The perimeter of circle1 is: " + circle1.calcPerim(3)); 
 
         }
     }
