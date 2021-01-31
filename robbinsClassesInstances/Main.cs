@@ -6,9 +6,9 @@ namespace robbinsClassesInstances
 {
     class MainClass
     {
-        public void Main(String[] args)
+        public static void Main(String[] args)
         {
-
+            var square1 = new Square(10); 
         }
     }
 }

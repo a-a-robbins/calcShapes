@@ -2,7 +2,7 @@
 
 namespace robbinsClassesInstances
 {
-    class Shapes
+    class Shape
     {
         //data members -- is this where Circle, Ellipse, etc go ? ? 
         
