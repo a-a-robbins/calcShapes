@@ -4,7 +4,7 @@ using System.Text;
 
 namespace robbinsClassesInstances
 {
-    class Rectangle
+    class Rectangle : Shape 
     {
         private double h;
         private double w;

@@ -4,16 +4,25 @@ using System.Text;
 
 namespace robbinsClassesInstances
 {
-    class MainClass
+    class MainClass : Shape
     {
         public static void Main(String[] args)
         {
-            var square1 = new Square(10);
-            var rectangle1 = new Rectangle(5, 4);
+
+            //FIX ME: set these declarations to DEFAULT
+            var square1 = new Square(DefaultSide1);
+            var rectangle1 = new Rectangle(DefaultSide1, DefaultSide2);
             var circle1 = new Circle(3);
             var ellipse1 = new Ellipse(2, 3);
             var pentagon1 = new Pentagon(5, 10); 
 
+           /* FIX ME: are we really reading in
+            * 
+            * if(Console.ReadLine() == "Square" ||  Console.ReadLine() == "square")
+                {
+                    _shapeType = "Square"; 
+                }
+           */
             Console.WriteLine(); 
 
             Console.WriteLine("The area of square1 is: " + square1.calcArea(10));

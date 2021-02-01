@@ -4,7 +4,7 @@ using System.Text;
 
 namespace robbinsClassesInstances
 {
-    class Circle
+    class Circle : Shape
     {
         private double r; 
 

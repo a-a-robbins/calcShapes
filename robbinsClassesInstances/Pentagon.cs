@@ -4,7 +4,7 @@ using System.Text;
 
 namespace robbinsClassesInstances
 {
-    class Pentagon
+    class Pentagon : Shape
     {
         private double s;
         private double a; 

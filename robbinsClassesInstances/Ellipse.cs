@@ -4,7 +4,7 @@ using System.Text;
 
 namespace robbinsClassesInstances
 {
-    class Ellipse
+    class Ellipse : Shape
     {
         private double a1;
         private double a2; 
