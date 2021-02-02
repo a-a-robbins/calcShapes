@@ -2,6 +2,15 @@
 using System.Collections.Generic;
 using System.Text;
 
+
+/* Potential Additions: 
+*  use shapes superclass with if/switch statements to use 
+*  appropriate calculations for area and perimeter, 
+*  therefore eliminating need for all of these individual 
+*  write statements :) 
+*/
+
+
 namespace robbinsClassesInstances
 {
     class MainClass : Shape
@@ -9,32 +18,57 @@ namespace robbinsClassesInstances
         public static void Main(String[] args)
         {
 
-            //FIX ME: set these declarations to DEFAULT
-            var square1 = new Square(DefaultSide1);
-            var rectangle1 = new Rectangle(DefaultSide1, DefaultSide2);
-            var circle1 = new Circle(3);
-            var ellipse1 = new Ellipse(2, 3);
-            var pentagon1 = new Pentagon(5, 10); 
+            var square1 = new Square();
+            var square2 = new Square(100);
+            Console.WriteLine();
 
-           /* FIX ME: are we really reading in
-            * 
-            * if(Console.ReadLine() == "Square" ||  Console.ReadLine() == "square")
-                {
-                    _shapeType = "Square"; 
-                }
-           */
-            Console.WriteLine(); 
+            var rectangle1 = new Rectangle(); 
+            var rectangle2 = new Rectangle(100, 125);
+            Console.WriteLine();
 
-            Console.WriteLine("The area of square1 is: " + square1.calcArea(10));
-            Console.WriteLine("The perimeter of square1 is: " + square1.calcPerim(10));
-            Console.WriteLine("The area of rectangle1 is: " + rectangle1.calcArea(5, 4));
-            Console.WriteLine("The perimeter of rectangle1 is: " + rectangle1.calcPerim(5, 4));
-            Console.WriteLine("The area of circle1 one is: " + circle1.calcArea(3));
-            Console.WriteLine("The perimeter of circle1 is: " + circle1.calcPerim(3));
-            Console.WriteLine("The area of ellipse1 one is: " + ellipse1.calcArea(2, 3));
-            Console.WriteLine("The perimeter of ellipse1 is: " + ellipse1.calcPerim(2, 3));
-            Console.WriteLine("The area of pentagon1 one is: " + pentagon1.calcArea(5, 10));
-            Console.WriteLine("The perimeter of pentagon1 is: " + ellipse1.calcPerim(5, 10));
+            var circle1 = new Circle(); 
+            var circle2 = new Circle(9);
+            Console.WriteLine();
+
+            var ellipse1 = new Ellipse();
+            var ellipse2 = new Ellipse(20, 15);
+            Console.WriteLine();
+
+            var pentagon1 = new Pentagon();
+            var pentagon2 = new Pentagon(5, 10);
+
+          
+            Console.WriteLine();
+
+
+            Console.WriteLine("The area of square1 is: " + square1.calcArea());
+            Console.WriteLine("The perimeter of square1 is: " + square1.calcPerim());
+            Console.WriteLine("The area of square2 is: " + square2.calcArea(100));
+            Console.WriteLine("The perimeter of square2 is: " + square2.calcPerim(100));
+            Console.WriteLine();
+
+            Console.WriteLine("The area of rectangle1 is: " + rectangle1.calcArea());
+            Console.WriteLine("The perimeter of rectangle1 is: " + rectangle1.calcPerim());
+            Console.WriteLine("The area of rectangle2 is: " + rectangle2.calcArea(100, 125));
+            Console.WriteLine("The perimeter of rectangle2 is: " + rectangle2.calcPerim(100, 125));
+            Console.WriteLine();
+
+            Console.WriteLine("The area of circle1 one is: {0:N}", circle1.calcArea());
+            Console.WriteLine("The perimeter of circle1 is: {0:N}", circle1.calcPerim());
+            Console.WriteLine("The area of circle2 one is: {0:N}", circle2.calcArea(9));
+            Console.WriteLine("The perimeter of circle2 is: {0:N}", circle2.calcPerim(9));
+            Console.WriteLine();
+
+            Console.WriteLine("The area of ellipse1 is: {0:N}", ellipse1.calcArea());
+            Console.WriteLine("The perimeter of ellipse1 is: {0:N}", ellipse1.calcPerim());
+            Console.WriteLine("The area of ellipse2 is: {0:N}", ellipse2.calcArea(20, 15));
+            Console.WriteLine("The perimeter of ellipse2 is: {0:N}", ellipse2.calcPerim(20, 15));
+            Console.WriteLine();
+
+            Console.WriteLine("The area of pentagon1 is: " + pentagon1.calcArea());
+            Console.WriteLine("The perimeter of pentagon1 is: " + pentagon1.calcPerim());
+            Console.WriteLine("The area of pentagon2 is: " + pentagon2.calcArea(5, 10));
+            Console.WriteLine("The perimeter of pentagon2 is: " + pentagon2.calcPerim(5));
 
         }
     }
